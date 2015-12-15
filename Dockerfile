@@ -1,4 +1,4 @@
-FROM alpine:3.2
+FROM gliderlabs/alpine:3.2
 
 MAINTAINER packeteer <packeteer@gmail.com>
 
@@ -13,6 +13,6 @@ VOLUME ["/data", "/var/lib/openldap"]
 
 EXPOSE 636
 
-#CMD ["slapd", "-u", "ldap", "-g", "ldap", "-d", "32768"]
+CMD ["slapd", "-u", "ldap", "-g", "ldap", "-d", "32768"]
 
-ENTRYPOINT [ "/sbin/slapd" ]
+#ENTRYPOINT [ "/sbin/slapd" ]
