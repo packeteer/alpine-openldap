@@ -5,9 +5,8 @@ MAINTAINER packeteer <packeteer@gmail.com>
 RUN apk add --update openldap openldap-back-hdb openldap-clients && rm -rf /var/cache/apk/*
 
 ADD slapd.conf /etc/openldap/slapd.conf
+ADD slapd.ldif /etc/openldap/slapd.ldif
 ENV LDAPCONF /etc/openldap/slapd.conf
-
-ADD modules /etc/openldap/modules
 
 VOLUME ["/data", "/var/lib/openldap"]
 
