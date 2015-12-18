@@ -9,7 +9,7 @@ VOLUME ["/srv/openldap/data", "/var/lib/openldap"]
 
 ENV LDAPCONF /etc/openldap/slapd.conf
 
-EXPOSE 636
+EXPOSE 389 636
 
 USER ["ldap"]
 CMD ["-d", "256"]
