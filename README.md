@@ -1,6 +1,6 @@
 # alpine-openldap
 OpenLDAP container based on Alpine Linux
 
-version .03
+version .04
 
-moving conf files to data volume
+config and data are on mounted volumes
