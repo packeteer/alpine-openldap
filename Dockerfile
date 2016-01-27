@@ -1,8 +1,8 @@
-FROM gliderlabs/alpine:3.2
+FROM gliderlabs/alpine:3.3
 
 MAINTAINER packeteer <packeteer@gmail.com>
 
-RUN apk add --update openldap openldap-back-hdb openldap-clients && rm -rf /var/cache/apk/*
+RUN apk add --update --no-cache openldap openldap-back-hdb openldap-clients
 
 VOLUME ["/srv/openldap/conf", "/etc/openldap"]
 VOLUME ["/srv/openldap/data", "/var/lib/openldap"]
