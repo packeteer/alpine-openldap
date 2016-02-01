@@ -11,7 +11,7 @@ ENV LDAPCONF /etc/openldap/slapd.conf
 
 EXPOSE 389 636
 
-USER ["nobody"]
+#USER ["nobody"]
 CMD ["-d", "256"]
 
 ENTRYPOINT [ "slapd" ]
