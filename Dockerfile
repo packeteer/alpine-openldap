@@ -4,8 +4,8 @@ MAINTAINER packeteer <packeteer@gmail.com>
 
 RUN apk add --update --no-cache openldap openldap-back-hdb openldap-clients
 
-VOLUME ["/etc/openldap", "/var/lib/openldap"]
-#ADD ?
+VOLUME ["/var/lib/openldap"]
+ADD config/ /etc/openldap/
 
 ENV LDAPCONF /etc/openldap/slapd.conf
 
