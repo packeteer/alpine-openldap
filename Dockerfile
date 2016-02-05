@@ -8,5 +8,5 @@ ENV LDAPCONF /etc/openldap/slapd.conf
 
 EXPOSE 389
 
-ENTRYPOINT ["slapd"]
-#CMD ["-d 256"]
+#ENTRYPOINT ["slapd"]
+CMD ["slapd -d 256 -F /etc/openldap"]
