@@ -4,9 +4,9 @@ MAINTAINER packeteer <packeteer@gmail.com>
 
 RUN apk add --update --no-cache openldap openldap-back-hdb openldap-clients
 
-ENV LDAPCONF /etc/openldap/slapd.conf
+#ENV LDAPCONF /etc/openldap/slapd.conf
 
 EXPOSE 389
 
-#ENTRYPOINT ["slapd"]
-CMD ["slapd -d 256 -F /etc/openldap"]
+ENTRYPOINT ["slapd"]
+#CMD ["slapd -d 256 -F /etc/openldap"]
