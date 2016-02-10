@@ -8,5 +8,5 @@ RUN apk add --update --no-cache openldap openldap-back-hdb openldap-clients
 
 EXPOSE 389
 
-ENTRYPOINT ["slapd"]
-#CMD ["slapd -d 256 -F /etc/openldap"]
+#ENTRYPOINT ["slapd"]
+CMD ["slapd -d 256 -F /etc/openldap"]
