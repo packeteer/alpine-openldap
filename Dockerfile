@@ -1,17 +1,11 @@
-FROM gliderlabs/alpine:3.3
+FROM gliderlabs/alpine
 
 MAINTAINER packeteer <packeteer@gmail.com>
 
 RUN apk-install openldap openldap-back-hdb openldap-clients
 
-#VOLUME ["/srv/openldap/conf", "/etc/openldap"]
-#VOLUME ["/srv/openldap/data", "/var/lib/openldap"]
-
 ENV LDAPCONF /etc/openldap/slapd.conf
 
 EXPOSE 389 636
 
-#USER ["nobody"]
-CMD ["-d", "256"]
-
-ENTRYPOINT [ "slapd" ]
+CMD ["slapd -d 256 -F /etc/openldap"]
