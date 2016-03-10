@@ -4,7 +4,7 @@ MAINTAINER packeteer <packeteer@gmail.com>
 
 RUN apk-install openldap openldap-clients openldap-back-hdb openldap-back-bdb ldapvi
 
-USER ldap
+USER nobody
 
 EXPOSE 389 636
 
