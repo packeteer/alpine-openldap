@@ -5,4 +5,4 @@ version 1.02
 
 docker run -d -P -v /srv/ldap/conf:/etc/openldap -v /srv/ldap/data:/var/lib/openldap/openldap-data packeteer/alpine-openldap
 
-you'll need to supply your own config and database. this can be done through docker exec etc
+Default OpenLDAP config is included, but it's best if you DIY. this can be done through docker exec etc
