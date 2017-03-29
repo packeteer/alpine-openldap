@@ -1,7 +1,7 @@
 # alpine-openldap
-OpenLDAP container based on Alpine Linux 3.3
+OpenLDAP container based on Alpine Linux (packaged by gliderlabs)
 
-version 1.03
+version 1.04
 
 docker run -d -P -v /srv/ldap/conf:/etc/openldap -v /srv/ldap/data:/var/lib/openldap/openldap-data packeteer/alpine-openldap
 
