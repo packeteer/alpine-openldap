@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:3.3
+FROM gliderlabs/alpine
 
 MAINTAINER packeteer <packeteer@gmail.com>
 
