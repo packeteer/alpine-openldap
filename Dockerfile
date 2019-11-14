@@ -1,6 +1,6 @@
 FROM alpine
 
-MAINTAINER packeteer <packeteer@gmail.com>
+MAINTAINER packeteer <@gmail.com>
 
 RUN apk add --no-cache openldap openldap-clients openldap-back-hdb openldap-back-bdb ldapvi
 
